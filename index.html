@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기업형 레이아웃</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <section class="wrap">
+        <!-- header -->
+    <header id="header">
+        <div class="inner">
+            <h1><a href="index.html">DCODELAB</a></h1>
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="department.html">DEPARTMENT</a></li>
+                    <li><a href="youtube.html">YOUTUBE</a></li>
+                    <li><a href="community.html">COMMUNITY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="location.html">LOCATION</a></li>
+                </ul>
+
+                <ul class="util">
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a> 
+
+            <nav class="menuMo">
+                <h1>
+                    <a href="index.html">DCODELAB</a>
+                    <span>UI/UX DEVELOPMENT INSTITUTE</span> 
+                </h1>
+
+                <ul id="gnbMo">
+                        <li><a href="department.html">DEPARTMENT</a></li>
+                        <li><a href="youtube.html">YOUTUBE</a></li>
+                        <li><a href="community.html">COMMUNITY</a></li>
+                        <li><a href="gallery.html">GALLERY</a></li>
+                        <li><a href="location.html">LOCATION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <!-- visual -->
+        <div id="visual">
+            <div class="slider">
+                <input type="radio" name="slide" id="slide1" checked>
+                <input type="radio" name="slide" id="slide2">
+                <input type="radio" name="slide" id="slide3">
+                <input type="radio" name="slide" id="slide4">
+                <ul id="imgholder" class="imgs">
+                    <li><img src="./img/배너26.jpg"></li>
+                    <li><img src="./img/메인4.webp"></li>
+                    <li><img src="./img/배너31.jpg"></li>
+                    <li><img src="./img/배너27.jpg"></li>
+                </ul>
+                <div class="bullets">
+                    <label for="slide1">&nbsp;</label>
+                    <label for="slide2">&nbsp;</label>
+                    <label for="slide3">&nbsp;</label>
+                    <label for="slide4">&nbsp;</label>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- //visual -->
+
+        <!-- icon -->
+        <section id="icon">
+            <div class="inner">
+                <article>
+                    <div class="iconbox">
+                        <i class="fas fa-heart fa-2x"></i>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium similique quae sed nemo deserunt suscipit vitae enim</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="iconbox">
+                        <i class="fas fa-heart fa-2x"></i>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sunt mollitia porro incidunt ipsam, dolor minus possimus temporibus</p>
+                    </div>
+                </article>
+                <article>
+                    <div class="iconbox">
+                        <i class="fas fa-shopping-bag fa-2x"></i>
+                        <h3>Lorem, ipsum.</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum sunt mollitia porro incidunt ipsam, dolor minus possimus  </p>
+                    </div>
+                </article>
+               
+            </div>
+        </section>
+        <!-- //campaign -->
+
+        <section id="brand">
+            <div class="inner">
+                <h1>GALLERY</h1>
+                <div class="wrap">
+                    <article>
+                        <img src="img/배너15.jpg" alt="브랜드1 이미지">
+                    </article>
+                    <article>
+                        <img src="img/제품1.jpg" alt="브랜드2 이미지">
+                    </article>
+                    <article>
+                        <img src="img/제품2.jpg" alt="브랜드3 이미지">
+                    </article>
+                    <article>
+                        <img src="img/배너17.jpg" alt="브랜드4 이미지">
+                    </article>
+                    <article>
+                        <img src="img/배너31.jpg" alt="브랜드5 이미지">
+                    </article>
+                    <article>
+                        <img src="img/배너7.jpg" alt="브랜드6 이미지">
+                    </article>
+                    <article>
+                        <img src="img/배너10.jpg" alt="브랜드7 이미지">
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="banner">
+            <div class="inner">
+                <h1>Lorem ipsum dolor sit amet consectetur.</h1>
+
+                <input id="email" type="text" placeholder="enter email">
+                <button type="button" onclick="sendemail()" value="send an Email">Submit</button>
+            </div>
+        </section>
+
+        <!-- about -->
+        <section id="news">
+            <div class="inner">
+                <h1>PRODUCT</h1>
+                <div class="wrap">
+                    <article>
+                        <div class="pic">
+                            <img src="img/배너23.jpg" alt="뉴스1 이미지">
+                        </div>
+                    </article>
+                    <article>
+                     <div class="pic">
+                         <img src="img/배너6.jpg" alt="뉴스2 이미지">
+                     </div>
+                 </article>
+                 <article>
+                     <div class="pic">
+                         <img src="img/배너25.jpg" alt="뉴스3 이미지">
+                     </div>
+                 </article>
+                 <article>
+                     <div class="pic">
+                         <img src="img/배너5.jpg" alt="뉴스4 이미지">
+                     </div>
+                 </article>
+                </div>
+            </div>
+        </section>
+        <!-- //about -->
+
+
+    <footer id="footer">
+        <div class="inner">
+            <h1>DCODELAB</h1>
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Customer</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+            <address>
+                address: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolore.<br/>
+                TEL : +82-2-2100-2114 FAX : +82-2-2100-7999
+            </address>
+
+            <p>Copyright &copy; 2021 DCODELAB ALL Right reserved.</p>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

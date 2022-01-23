@@ -1,0 +1,95 @@
+.location{
+    width:100%; 
+
+    #map{
+        width:100%; height:500px; 
+        border:1px solid #000; 
+        margin-bottom:20px; 
+    }
+
+    &::after{
+        content:''; display: block; clear: both;
+    }
+    .traffic{
+        float:left; 
+
+        li{
+            float:left; margin-right:20px; 
+
+            a{
+                display:block; 
+                width:200px; height:40px; 
+                background:#555; 
+                font:bold 12px/40px '맑은 고딕'; 
+                color:#fff; 
+                text-align:center;
+                border:1px solid #555; 
+            }
+
+            &.on a{
+                background:#fff; color:#333; 
+                
+            }
+        }
+    }
+
+    .branch{
+        float:right; 
+
+        li{
+            float: left; margin-left:10px; 
+
+            a{
+                display: block; 
+                width:200px; height:40px; 
+                background:#555; 
+                font:bold 12px/40px '맑은 고딕'; 
+                color:#fff; 
+                text-align:center; 
+                border:1px solid #555; 
+            }
+
+            &.on a{
+                background:#fff; 
+                color:#333; 
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:$tablet){
+    .location{  
+        #map{    height:350px;}
+    
+       
+        .traffic{          
+            width:100%;
+            li{
+                float:left; margin-right:1%;
+                width:calc(97% / 3); 
+                a{
+                    width:100%; 
+                }
+            }
+        }
+    
+        .branch{
+            float:left; margin-top:20px; width:100%; 
+    
+            li{
+                float: left; margin-left:0px; margin-right:1%;  
+                width:calc(97% / 3);  
+                a{                   
+                    width:100%;  
+                }     
+            }
+        }
+    }
+}
+
+ 
+
+
+
