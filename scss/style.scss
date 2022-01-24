@@ -462,7 +462,6 @@ $mobile: 539px;
 	width: 100%;
 	padding: 100px 0;
 	background: url(../img/가로배경.jpg) no-repeat center/cover fixed;
-	// opacity: 0.8;
 	text-align: center; 
 	.inner {
 		width: 1200px;
@@ -471,18 +470,33 @@ $mobile: 539px;
 		h1 {
 			@include title($fontSize: 30px, $mb: 30px, $color: #fff);
 		}
+		#searchBox{
+			width:100%; padding:0px; 
+			font-size:0; 
+			text-align: center;
+			#email {
+				width:300px; height:40px; border:1px solid #333; 
+            	padding-left:10px; 
+				box-shadow: 3px 3px 5px rgb(44, 44, 44);
+			}
+			.btnSearch{
+				width:70px; height:40px; 
+				background:#333; 
+				font:bold 12px/30px 'arial'; color:#fff; 
+				text-align:center; 
+				border:none; 
+				cursor:pointer; 
+				margin-left:0px; 
+				vertical-align:top; 
+				box-shadow: 3px 3px 5px rgb(44, 44, 44);
 
-		input {
-			padding: 7px 15px;
-		}
-		button{
-			padding: 7px 20px;
-
-			&:hover{
-				background: black;
-				color: #fff;
+				&:hover{
+					background: black;
+					color: #fff;
+				}
 			}
 		}
+		
 	}
 }
 

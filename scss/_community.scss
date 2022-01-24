@@ -45,13 +45,19 @@
             .prev{
                 float:left; 
                 display:block; width:30px; height:30px; 
-                font-size:20px; color:#eee; text-align:center; background:#000; 
+                font-size:20px; color:#000; text-align:center;
+                border:1px solid #bdbdbd; 
+                border-radius: 20px;
+                margin-left: 500px;
             }
             .next{
                 float:right; 
                 display:block; width:30px; height:30px; 
-                font-size:20px; color:#eee; 
-                text-align:center; background:#000; 
+                font-size:20px; color:#000; 
+                text-align:center;
+                border:1px solid #bdbdbd; 
+                border-radius: 20px;
+                margin-right: 500px;
             }
 
             .numbers{
@@ -59,14 +65,17 @@
                 font-size:0; 
 
                 a{
-                    border:1px solid #888; 
+                    border:1px solid #bdbdbd; 
+                    border-radius: 20px;
                     display:inline-block; 
                     width:30px; height:30px; 
                     font:11px/30px 'arial'; color:#666; 
                     margin:0 5px; transition:0.5s; 
 
                     &:hover{
+                        // width:30px; height:30px; 
                         background: #000; color:#fff; 
+                        border-radius: 20px;
                     }
                 }
             }

@@ -52,9 +52,6 @@ table {
           padding: 14px 40px;
           font: bold 14px/1 'arial';
           color: #777; }
-          #header_sub .inner .menuWeb #gnb li a:hover {
-            background: #555;
-            color: #fff; }
     #header_sub .inner .menuWeb .util {
       position: absolute;
       top: 20px;
@@ -161,16 +158,17 @@ table {
     margin: 0 auto;
     min-height: 500px; }
     .content .inner h1 {
-      font: normal 20px/1 'arial';
-      color: #aaa;
+      font: bold 15px/1 'arial';
+      color: #acabb0;
       margin-bottom: 60px; }
+      .content .inner h1 i {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: smaller;
+        color: #5f5f5f; }
       .content .inner h1 span {
-        font: bold 20px/1 '맑은 고딕';
+        font: bold 15px/1 '맑은 고딕';
         color: #666; }
-        .content .inner h1 span::before {
-          content: '>';
-          margin-right: 5px;
-          margin-left: 5px; }
 
 #footer_sub {
   width: 100%;
@@ -374,24 +372,29 @@ table {
     width: 30px;
     height: 30px;
     font-size: 20px;
-    color: #eee;
+    color: #000;
     text-align: center;
-    background: #000; }
+    border: 1px solid #bdbdbd;
+    border-radius: 20px;
+    margin-left: 500px; }
   .community .inner .pagination .next {
     float: right;
     display: block;
     width: 30px;
     height: 30px;
     font-size: 20px;
-    color: #eee;
+    color: #000;
     text-align: center;
-    background: #000; }
+    border: 1px solid #bdbdbd;
+    border-radius: 20px;
+    margin-right: 500px; }
   .community .inner .pagination .numbers {
     display: inline-block;
     text-align: center;
     font-size: 0; }
     .community .inner .pagination .numbers a {
-      border: 1px solid #888;
+      border: 1px solid #bdbdbd;
+      border-radius: 20px;
       display: inline-block;
       width: 30px;
       height: 30px;
@@ -401,7 +404,8 @@ table {
       transition: 0.5s; }
       .community .inner .pagination .numbers a:hover {
         background: #000;
-        color: #fff; }
+        color: #fff;
+        border-radius: 20px; }
 
 /*tablet -------------------------------------  */
 @media screen and (max-width: 1179px) {
@@ -456,19 +460,19 @@ table {
   text-align: center; }
   .gallery #gallery #searchBox #search {
     width: 300px;
-    height: 30px;
+    height: 35px;
     border: 1px solid #333;
     padding-left: 10px; }
   .gallery #gallery #searchBox .btnSearch {
-    width: 80px;
-    height: 30px;
+    width: 55px;
+    height: 35px;
     background: #333;
     font: bold 12px/30px 'arial';
     color: #fff;
     text-align: center;
     border: none;
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 0px;
     vertical-align: top; }
 .gallery #gallery #wrap {
   width: 100%;
@@ -664,49 +668,59 @@ aside {
     display: block; } }
 .location {
   width: 100%; }
+  .location .sub_visual {
+    background: url(../img/가로배경1.jpg) no-repeat center/cover; }
   .location #map {
     width: 100%;
     height: 500px;
     border: 1px solid #000;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    top: 20px; }
+    .location #map .info {
+      width: 100px;
+      z-index: 1px;
+      background: #000; }
   .location::after {
     content: '';
     display: block;
     clear: both; }
   .location .traffic {
-    float: left; }
+    position: absolute;
+    float: left;
+    margin-top: 30px; }
     .location .traffic li {
       float: left;
-      margin-right: 20px; }
+      margin-right: 10px;
+      box-shadow: 2px 2px 10px #bdbdbd; }
       .location .traffic li a {
         display: block;
-        width: 200px;
+        width: 110px;
         height: 40px;
-        background: #555;
+        background: rgba(255, 255, 255, 0.4);
         font: bold 12px/40px '맑은 고딕';
-        color: #fff;
-        text-align: center;
-        border: 1px solid #555; }
+        color: #000;
+        text-align: center; }
       .location .traffic li.on a {
-        background: #fff;
-        color: #333; }
+        background: #000;
+        color: #fff; }
   .location .branch {
-    float: right; }
+    float: right;
+    margin-top: 30px; }
     .location .branch li {
       float: left;
-      margin-left: 10px; }
+      margin-left: 10px;
+      box-shadow: 2px 2px 10px #bdbdbd; }
       .location .branch li a {
         display: block;
-        width: 200px;
+        width: 150px;
         height: 40px;
-        background: #555;
+        background: #bdbdbd;
         font: bold 12px/40px '맑은 고딕';
         color: #fff;
-        text-align: center;
-        border: 1px solid #555; }
+        text-align: center; }
       .location .branch li.on a {
-        background: #fff;
-        color: #333; }
+        background: #000;
+        color: #fff; }
 
 @media screen and (max-width: 1179px) {
   .location #map {
@@ -756,16 +770,20 @@ aside {
       height: 40%;
       padding: 20px; }
       .youtube .vidList article .con h2 {
+        height: 20%;
         font: bold 20px/1.2 'arial';
         color: #444;
-        margin-bottom: 15px; }
+        margin-bottom: 15px;
+        overflow: hidden; }
       .youtube .vidList article .con p {
+        height: 30%;
+        overflow: hidden;
         font: 14px/1.4 'arial';
         color: #666;
         margin-bottom: 20px; }
       .youtube .vidList article .con span {
         font: bold 16px/1 'arial';
-        color: orange; }
+        color: #000; }
 .youtube figure.pop {
   width: 100%;
   height: 100vh;
@@ -781,7 +799,7 @@ aside {
   .youtube figure.pop .btnClose {
     position: absolute;
     top: 50px;
-    right: 50px;
+    right: 80px;
     color: #fff;
     cursor: pointer; }
 
@@ -1112,13 +1130,32 @@ aside {
       color: #fff;
       text-align: center;
       margin-bottom: 30px; }
-    #banner .inner input {
-      padding: 7px 15px; }
-    #banner .inner button {
-      padding: 7px 20px; }
-      #banner .inner button:hover {
-        background: black;
-        color: #fff; }
+    #banner .inner #searchBox {
+      width: 100%;
+      padding: 0px;
+      font-size: 0;
+      text-align: center; }
+      #banner .inner #searchBox #email {
+        width: 300px;
+        height: 40px;
+        border: 1px solid #333;
+        padding-left: 10px;
+        box-shadow: 3px 3px 5px #2c2c2c; }
+      #banner .inner #searchBox .btnSearch {
+        width: 70px;
+        height: 40px;
+        background: #333;
+        font: bold 12px/30px 'arial';
+        color: #fff;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        margin-left: 0px;
+        vertical-align: top;
+        box-shadow: 3px 3px 5px #2c2c2c; }
+        #banner .inner #searchBox .btnSearch:hover {
+          background: black;
+          color: #fff; }
 
 /*bannerbox*/
 #news {

@@ -19,7 +19,8 @@
                 width:100%; height:60%; 
                 >img{
                     width:100%; height:100%; 
-                    object-fit:cover; 
+                    object-fit:cover;
+                    // :nth-child(2) {background: url(../img/유튜브이미지2.jpg);}
                 }
             }
             .con{
@@ -27,15 +28,19 @@
                 padding:20px; 
 
                 h2{
+                    height: 20%;
                     font:bold 20px/1.2 'arial'; 
                     color:#444; margin-bottom:15px; 
+                    overflow: hidden;
                 }
                 p{
+                    height: 30%;
+                    overflow: hidden;
                     font:14px/1.4 'arial'; color:#666; 
                     margin-bottom:20px; 
                 }
                 span{
-                    font:bold 16px/1 'arial'; color:orange; 
+                    font:bold 16px/1 'arial'; color:#000; 
                 }
             }
         }
@@ -50,7 +55,7 @@
         display:flex; justify-content:center; align-items:center; 
 
         .btnClose{
-            position:absolute; top:50px; right:50px; 
+            position:absolute; top:50px; right:80px; 
             color:#fff; cursor:pointer; 
         }
     }

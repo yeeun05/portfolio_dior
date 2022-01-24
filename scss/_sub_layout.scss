@@ -26,9 +26,9 @@
                         font:bold 14px/1 'arial'; 
                         color:#777; 
 
-                        &:hover{
-                            background:#555; color:#fff; 
-                        }
+                        // &:hover{
+                        //     background:#555; color:#fff; 
+                        // }
                     }
                 }
             }
@@ -134,15 +134,20 @@
         min-height:500px; 
 
         h1{
-            font:normal 20px/1 'arial'; color:#aaa; 
+            font:bold 15px/1 'arial'; color:#acabb0; 
             margin-bottom:60px; 
 
+            i {
+                margin-right:10px; margin-left:10px;
+                font-size: smaller;
+                color: #5f5f5f;
+            }
             span{
-                font:bold 20px/1 '맑은 고딕'; color:#666; 
+                font:bold 15px/1 '맑은 고딕'; color:#666; 
 
-                &::before{
-                    content:'>'; margin-right:5px; margin-left:5px; 
-                }
+                // &::before{
+                //     content:''; margin-right:5px; margin-left:5px; 
+                // }
             }
         }
     }
